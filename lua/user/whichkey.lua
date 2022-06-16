@@ -182,16 +182,16 @@ local mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 
-  m = {
-    name = "Code Utilites",
-    K = { "<cmd>vim.lsp.buf.hover<cr>", "Show hover" },
-    gd = { "<cmd>lua vim.lsp.buf.definition<cr>", "Goto Definition" },
-    gD = { "<cmd>vim.lsp.buf.declaration<cr>", "Goto declaration" },
-    gr = { "<cmd>vim.lsp.buf.references<cr>", "Goto references" },
-    gI = { "<cmd>vim.lsp.buf.implementation<cr>", "Goto Implementation" },
-    gs = { "<cmd>vim.lsp.buf.signature_help<cr>", "show signature help" },
-    gp = { "<cmd>lua require('lvim.lsp.peek').Peek 'definition'<cr>", "Peek Definition" },
-  },
+ -- m = {
+ --   name = "Code Utilites",
+ --   K = { "<cmd>vim.lsp.buf.hover<cr>", "Show hover" },
+ --   gd = { "<cmd>lua vim.lsp.buf.definition<cr>", "Goto Definition" },
+ --   gD = { "<cmd>vim.lsp.buf.declaration<cr>", "Goto declaration" },
+ --   gr = { "<cmd>vim.lsp.buf.references<cr>", "Goto references" },
+ --   gI = { "<cmd>vim.lsp.buf.implementation<cr>", "Goto Implementation" },
+ --   gs = { "<cmd>vim.lsp.buf.signature_help<cr>", "show signature help" },
+ --   gp = { "<cmd>lua require('lvim.lsp.peek').Peek 'definition'<cr>", "Peek Definition" },
+ -- },
 }
 
 which_key.setup(setup)
