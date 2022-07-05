@@ -44,3 +44,11 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
     vim.highlight.on_yank { higroup = "Visual", timeout = 200 }
   end,
 })
+
+-- Run Rust-Tools reload Workspace command
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "*.rs" },
+  callback = function()
+    vim.cmd ":RustWorkspaceReload"
+  end,
+})
