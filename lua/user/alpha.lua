@@ -22,7 +22,7 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "" -- footer string displayed
+  return ""
 end
 
 dashboard.section.footer.val = footer()
