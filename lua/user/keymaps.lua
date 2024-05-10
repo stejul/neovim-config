@@ -25,8 +25,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 --keymap("n", "<S-l>", ":bnext<CR>", opts)
 --keymap("n", "<S-h>", ":bprevious<CR>", opts)
 --test
-keymap("n", "<C-S-l>", ":+tabmove<CR>", opts)
-keymap("n", "<C-S-h>", ":-tabmove<CR>", opts)
+keymap("n", "<C-S-Right>", ":+tabnext<CR>", opts)
+keymap("n", "<C-S-Left>", ":-tabnext<CR>", opts)
 
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
