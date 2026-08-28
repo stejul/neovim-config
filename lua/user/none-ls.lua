@@ -1,7 +1,7 @@
 local M = {
-  "nvimtools/none-ls.nvim",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
+  "https://github.com/nvimtools/none-ls.nvim",
+  deps = {
+    "https://github.com/nvim-lua/plenary.nvim",
   },
 }
 

@@ -1,6 +1,5 @@
 local M = {
-  "nvim-tree/nvim-web-devicons",
-  event = "VeryLazy",
+  "https://github.com/nvim-tree/nvim-web-devicons",
 }
 
 function M.config()

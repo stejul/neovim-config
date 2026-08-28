@@ -1,15 +1,22 @@
 local M = {
-  "nvim-treesitter/nvim-treesitter",
-  event = { "BufReadPost", "BufNewFile" },
-  build = ":TSUpdate",
+  "https://github.com/nvim-treesitter/nvim-treesitter",
 }
 
+local parsers = { "lua", "markdown", "markdown_inline", "bash", "python" }
+local no_indent = { markdown = true, markdown_inline = true }
+
 function M.config()
-  require("nvim-treesitter.configs").setup {
-    ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python" },
-    highlight = { enable = true },
-    indent = { enable = true },
-  }
+  require("nvim-treesitter").install(parsers)
+
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = parsers,
+    callback = function(ev)
+      vim.treesitter.start()
+      if not no_indent[ev.match] then
+        vim.bo[ev.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+      end
+    end,
+  })
 end
 
 return M

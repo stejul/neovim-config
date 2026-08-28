@@ -1,11 +1,7 @@
 local M = {
-  "numToStr/Comment.nvim",
-  lazy = false,
-  dependencies = {
-    {
-      "JoosepAlviste/nvim-ts-context-commentstring",
-      event = "VeryLazy",
-    },
+  "https://github.com/numToStr/Comment.nvim",
+  deps = {
+    "https://github.com/JoosepAlviste/nvim-ts-context-commentstring",
   },
 }
 

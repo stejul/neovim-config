@@ -1,8 +1,7 @@
 local M = {
-  "ThePrimeagen/harpoon",
-  event = "VeryLazy",
-  dependencies = {
-    { "nvim-lua/plenary.nvim" },
+  "https://github.com/ThePrimeagen/harpoon",
+  deps = {
+    "https://github.com/nvim-lua/plenary.nvim",
   },
 }
 

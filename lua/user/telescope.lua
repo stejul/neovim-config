@@ -1,16 +1,15 @@
 local M = {
-  "nvim-telescope/telescope.nvim",
-  dependencies = {
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true },
-    "nvim-lua/plenary.nvim",
+  "https://github.com/nvim-telescope/telescope.nvim",
+  deps = {
+    "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
+    "https://github.com/nvim-lua/plenary.nvim",
   },
-  -- lazy = true,
-  cmd = "Telescope",
 }
 
 function M.config()
   local wk = require "which-key"
   wk.add {
+    { "<leader>f", group = "Find" },
     { "<leader>bb", "<cmd>Telescope buffers previewer=false<cr>", desc = "Find" },
     { "<leader>fb", "<cmd>Telescope git_branches<cr>", desc = "Checkout branch" },
     { "<leader>fc", "<cmd>Telescope colorscheme<cr>", desc = "Colorscheme" },

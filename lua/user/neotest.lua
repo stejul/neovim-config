@@ -1,18 +1,15 @@
 local M = {
-  "nvim-neotest/neotest",
-  dependencies = {
-    "nvim-neotest/nvim-nio",
-    "nvim-treesitter/nvim-treesitter",
-    -- general tests
-    "vim-test/vim-test",
-    "nvim-neotest/neotest-vim-test",
-    -- language specific tests
-    "marilari88/neotest-vitest",
-    "nvim-neotest/neotest-python",
-    "nvim-neotest/neotest-plenary",
-    "rouge8/neotest-rust",
-    "lawrence-laz/neotest-zig",
-    "rcasia/neotest-bash",
+  "https://github.com/nvim-neotest/neotest",
+  deps = {
+    "https://github.com/nvim-neotest/nvim-nio",
+    "https://github.com/vim-test/vim-test",
+    "https://github.com/nvim-neotest/neotest-vim-test",
+    "https://github.com/marilari88/neotest-vitest",
+    "https://github.com/nvim-neotest/neotest-python",
+    "https://github.com/nvim-neotest/neotest-plenary",
+    "https://github.com/rouge8/neotest-rust",
+    "https://github.com/lawrence-laz/neotest-zig",
+    "https://github.com/rcasia/neotest-bash",
   },
 }
 

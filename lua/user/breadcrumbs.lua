@@ -1,5 +1,5 @@
 local M = {
-  "LunarVim/breadcrumbs.nvim",
+  "https://github.com/LunarVim/breadcrumbs.nvim",
 }
 
 function M.config()

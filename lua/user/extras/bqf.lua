@@ -1,6 +1,5 @@
 local M = {
-  "kevinhwang91/nvim-bqf",
-  event = "VeryLazy",
+  "https://github.com/kevinhwang91/nvim-bqf",
 }
 
 function M.config()

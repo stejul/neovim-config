@@ -1,5 +1,5 @@
 local M = {
-  "SmiteshP/nvim-navic",
+  "https://github.com/SmiteshP/nvim-navic",
 }
 
 function M.config()

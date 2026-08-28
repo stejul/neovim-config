@@ -1,6 +1,5 @@
 local M = {
-  "nvim-tree/nvim-tree.lua",
-  event = "VeryLazy",
+  "https://github.com/nvim-tree/nvim-tree.lua",
 }
 
 function M.config()
@@ -16,6 +15,9 @@ function M.config()
     sync_root_with_cwd = true,
     view = {
       relativenumber = true,
+    },
+    filters = {
+      dotfiles = true,
     },
     renderer = {
       add_trailing = false,

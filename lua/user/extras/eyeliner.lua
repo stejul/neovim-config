@@ -1,6 +1,5 @@
 local M = {
-  "jinh0/eyeliner.nvim",
-  event = "VeryLazy",
+  "https://github.com/jinh0/eyeliner.nvim",
 }
 
 function M.config()

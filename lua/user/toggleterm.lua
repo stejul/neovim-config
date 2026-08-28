@@ -1,6 +1,5 @@
 local M = {
-  "akinsho/toggleterm.nvim",
-  event = "VeryLazy",
+  "https://github.com/akinsho/toggleterm.nvim",
 }
 
 function M.config()

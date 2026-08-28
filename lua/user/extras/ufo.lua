@@ -1,8 +1,8 @@
 local M = {
-  "kevinhwang91/nvim-ufo",
-  dependencies = {
-    "kevinhwang91/promise-async",
-    "luukvbaal/statuscol.nvim",
+  "https://github.com/kevinhwang91/nvim-ufo",
+  deps = {
+    "https://github.com/kevinhwang91/promise-async",
+    "https://github.com/luukvbaal/statuscol.nvim",
   },
 }
 

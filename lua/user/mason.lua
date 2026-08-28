@@ -1,7 +1,7 @@
 local M = {
-  "williamboman/mason-lspconfig.nvim",
-  dependencies = {
-    "williamboman/mason.nvim",
+  "https://github.com/williamboman/mason-lspconfig.nvim",
+  deps = {
+    "https://github.com/williamboman/mason.nvim",
   },
 }
 
@@ -14,6 +14,7 @@ function M.config()
     "pyright",
     "bashls",
     "jsonls",
+    "clangd",
   }
 
   require("mason").setup {

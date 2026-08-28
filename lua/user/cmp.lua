@@ -1,41 +1,15 @@
 local M = {
-  "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
-  dependencies = {
-    {
-      "hrsh7th/cmp-nvim-lsp",
-      event = "InsertEnter",
-    },
-    {
-      "hrsh7th/cmp-emoji",
-      event = "InsertEnter",
-    },
-    {
-      "hrsh7th/cmp-buffer",
-      event = "InsertEnter",
-    },
-    {
-      "hrsh7th/cmp-path",
-      event = "InsertEnter",
-    },
-    {
-      "hrsh7th/cmp-cmdline",
-      event = "InsertEnter",
-    },
-    {
-      "saadparwaiz1/cmp_luasnip",
-      event = "InsertEnter",
-    },
-    {
-      "L3MON4D3/LuaSnip",
-      event = "InsertEnter",
-      dependencies = {
-        "rafamadriz/friendly-snippets",
-      },
-    },
-    {
-      "hrsh7th/cmp-nvim-lua",
-    },
+  "https://github.com/hrsh7th/nvim-cmp",
+  deps = {
+    "https://github.com/hrsh7th/cmp-nvim-lsp",
+    "https://github.com/hrsh7th/cmp-emoji",
+    "https://github.com/hrsh7th/cmp-buffer",
+    "https://github.com/hrsh7th/cmp-path",
+    "https://github.com/hrsh7th/cmp-cmdline",
+    "https://github.com/saadparwaiz1/cmp_luasnip",
+    "https://github.com/L3MON4D3/LuaSnip",
+    "https://github.com/rafamadriz/friendly-snippets",
+    "https://github.com/hrsh7th/cmp-nvim-lua",
   },
 }
 
@@ -125,19 +99,12 @@ function M.config()
           vim_item.kind_hl_group = "CmpItemKindEmoji"
         end
 
-        if entry.source.name == "cmp_tabnine" then
-          vim_item.kind = icons.misc.Robot
-          vim_item.kind_hl_group = "CmpItemKindTabnine"
-        end
-
         return vim_item
       end,
     },
     sources = {
-      { name = "copilot" },
       { name = "nvim_lsp" },
       { name = "luasnip" },
-      { name = "cmp_tabnine" },
       { name = "nvim_lua" },
       { name = "buffer" },
       { name = "path" },

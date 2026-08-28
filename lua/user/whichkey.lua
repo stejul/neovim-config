@@ -1,5 +1,5 @@
 local M = {
-  "folke/which-key.nvim",
+  "https://github.com/folke/which-key.nvim",
 }
 
 function M.config()
@@ -17,9 +17,20 @@ function M.config()
       { "<leader>b", group = "Buffers" },
       { "<leader>d", group = "Debug" },
       { "<leader>f", group = "Find" },
+      { "<leader>bb", "<cmd>Telescope buffers previewer=false<cr>", desc = "Find" },
+      { "<leader>fb", "<cmd>Telescope git_branches<cr>", desc = "Checkout branch" },
+      { "<leader>fc", "<cmd>Telescope colorscheme<cr>", desc = "Colorscheme" },
+      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+      { "<leader>fp", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", desc = "Projects" },
+      { "<leader>ft", "<cmd>Telescope live_grep<cr>", desc = "Find Text" },
+      { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
+      { "<leader>fl", "<cmd>Telescope resume<cr>", desc = "Last Search" },
+      { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent File" },
       { "<leader>g", group = "Git" },
       { "<leader>l", group = "LSP" },
       { "<leader>p", group = "Plugins" },
+      { "<leader>pu", "<cmd>lua vim.pack.update()<cr>", desc = "Update" },
+      { "<leader>ps", "<cmd>lua vim.pack.update(nil, { offline = true })<cr>", desc = "Status" },
       { "<leader>t", group = "Test" },
       { "<leader>a", group = "Tab" },
       { "<leader>aN", "<cmd>tabnew %<cr>", desc = "New Tab" },

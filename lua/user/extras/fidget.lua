@@ -1,15 +1,9 @@
 local M = {
-  "j-hui/fidget.nvim",
+  "https://github.com/j-hui/fidget.nvim",
 }
 
 function M.config()
   require("fidget").setup {
-    integration = {
-      ["nvim-tree"] = {
-        enable = true,
-      },
-    },
-
     notification = {
       window = {
         normal_hl = "CursorLineNr", -- Base highlight group in the notification window

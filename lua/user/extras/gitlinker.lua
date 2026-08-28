@@ -1,7 +1,8 @@
 local M = {
-  "linrongbin16/gitlinker.nvim",
-  dependencies = { { "nvim-lua/plenary.nvim" } },
-  event = "VeryLazy",
+  "https://github.com/linrongbin16/gitlinker.nvim",
+  deps = {
+    "https://github.com/nvim-lua/plenary.nvim",
+  },
 }
 
 function M.config()

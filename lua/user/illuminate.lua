@@ -1,6 +1,5 @@
 local M = {
-  "RRethy/vim-illuminate",
-  event = "VeryLazy",
+  "https://github.com/RRethy/vim-illuminate",
 }
 
 function M.config()

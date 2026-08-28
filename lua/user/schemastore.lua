@@ -1,6 +1,5 @@
 local M = {
-  "b0o/schemastore.nvim",
-  lazy = true,
+  "https://github.com/b0o/schemastore.nvim",
 }
 
 function M.config() end
